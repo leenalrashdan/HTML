@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sweet Shop Cart</title>
+<style>
+   
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+    .cart-items {
+        border-top: 2px solid #ccc;
+        margin-top: 20px;
+        padding-top: 20px;
+    }
+    .item {
+        display: flex;
+        margin-bottom: 15px;
+        padding: 10px;
+        background-color: #f9f9f9;
+        border-radius: 4px;
+        box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    .item img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 4px;
+        margin-right: 10px;
+    }
+    .item-info {
+        flex: 1;
+    }
+    .item-name {
+        font-size: 1.2em;
+        margin: 0;
+        color: #333;
+    }
+    .item-price {
+        color: #666;
+    }
+    .item-remove {
+        margin-left: auto;
+        cursor: pointer;
+        color: #f44336;
+    }
+    .total {
+        margin-top: 20px;
+        text-align: right;
+        font-size: 1.2em;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Leen's Shop Cart</h1>
+    <div class="cart-items">
+        <div class="item">
+            <img src="https://th.bing.com/th/id/OIP.f495YHppocJTGURbdyscGwHaJQ?w=158&h=198&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Product Image">
+            <div class="item-info">
+                <h2 class="item-name">Chocolate Truffles</h2>
+                <p class="item-price">12.99JD</p>
+            </div>
+            <div class="item-remove">&times;</div>
+        </div>
+        <div class="item">
+            <img src="https://th.bing.com/th/id/OIP.i6wHZ4oTI2fIhLwmPVLrxAHaIE?w=166&h=181&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Product Image">
+            <div class="item-info">
+                <h2 class="item-name">Candy Assortment</h2>
+                <p class="item-price">9.99JD</p>
+            </div>
+            <div class="item-remove">&times;</div>
+        </div>
+        <!-- Add more items as needed -->
+    </div>
+    <div class="total">
+        <p>Total: 22.98JD</p>
+    </div>
+</div>
+</body>
+</html>
