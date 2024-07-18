@@ -53,21 +53,64 @@
 <body>
 <div class="container">
     <h1>Categories</h1>
-    <div class="categories">
-        <div class="category">
-            <h2>Cookies</h2>
-            <p> Chocolate Chip Cookies</p>
-            <p> Peanut Butter Cookies </p>
-            <p> Oatmeal Raisin Cookies</p>
-        </div>
-        <div class="category">
-            <h2>Cake</h2>
-            <p>White cake</p>
-            <p>Apple cake</p>
-            <p>Strawberry  cake</p>
-            <p>Black Forest cake</p>
+<table border="1">
+    <tr>
+        <th>Category</th>
+        <th>Item</th>
+    </tr>
+    <tr>
+        <td rowspan="3">Cookies</td>
+        <td>Chocolate Chip Cookies</td>
+    </tr>
+    <tr>
+        <td>Peanut Butter Cookies</td>
+    </tr>
+    <tr>
+        <td>Oatmeal Raisin Cookies</td>
+    </tr>
+    <tr>
+        <td rowspan="4">Cake</td>
+        <td>White Cake</td>
+    </tr>
+    <tr>
+        <td>Apple Cake</td>
+    </tr>
+    <tr>
+        <td>Strawberry Cake</td>
+    </tr>
+    <tr>
+        <td>Black Forest Cake</td>
+    </tr>
+</table>
 
-        </div>
+<h2>Order Form</h2>
+<form action="#" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" ><br><br>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" ><br><br>
+    
+    <label for="category">Select Category:</label>
+    <select id="category" name="category" >
+        <option value="cookies">Cookies</option>
+        <option value="cake">Cake</option>
+    </select><br><br>
+    
+    <label for="items">Select Item:</label>
+    <select id="items" name="items" >
+        <option value="chocolate_chip">Chocolate Chip Cookies</option>
+        <option value="peanut_butter">Peanut Butter Cookies</option>
+        <option value="oatmeal_raisin">Oatmeal Raisin Cookies</option>
+        <option value="white_cake">White Cake</option>
+        <option value="apple_cake">Apple Cake</option>
+        <option value="strawberry_cake">Strawberry Cake</option>
+        <option value="black_forest">Black Forest Cake</option>
+    </select><br><br>
+    
+    <input type="submit" value="Submit">
+</form>
+
       
     </div>
 </div>
